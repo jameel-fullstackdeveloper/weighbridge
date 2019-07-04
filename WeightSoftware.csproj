@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA784F12-0A0A-4144-8268-AB26DC9606C9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WeightSoftware</RootNamespace>
+    <AssemblyName>WeightSoftware</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MySql.Data, Version=6.3.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\JameelAhmed\Desktop\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VSLangProj90, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InwardManualyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InwardManualyFrm.Designer.cs">
+      <DependentUpon>InwardManualyFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inwardsfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inwardsfrm.Designer.cs">
+      <DependentUpon>Inwardsfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InwardsPrint.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InwardsPrint.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InwardsReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InwardsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InwordsReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InwordsReports.Designer.cs">
+      <DependentUpon>InwordsReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW\AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW\AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW\SaleReturnSecondWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW\SaleReturnSecondWeight.designer.cs">
+      <DependentUpon>SaleReturnSecondWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW\SaleReturnFirstWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW\SaleReturnFirstWeight.designer.cs">
+      <DependentUpon>SaleReturnFirstWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW\DC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW\DC.designer.cs">
+      <DependentUpon>DC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW\DC_others.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW\DC_others.Designer.cs">
+      <DependentUpon>DC_others.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW\InwardsPrint.cs">
+      <DependentUpon>InwardsPrint.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="NEW\Inward_FirstWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW\Inward_FirstWeight.designer.cs">
+      <DependentUpon>Inward_FirstWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW\Inward_SecondWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW\Inward_SecondWeight.designer.cs">
+      <DependentUpon>Inward_SecondWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW\OutWardsPrint.cs">
+      <DependentUpon>OutWardsPrint.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="NEW\Outward_Others.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW\Outward_Others.Designer.cs">
+      <DependentUpon>Outward_Others.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW\Outward_SecondWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW\Outward_SecondWeight.designer.cs">
+      <DependentUpon>Outward_SecondWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW\Outword_FirstWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW\Outword_FirstWeight.designer.cs">
+      <DependentUpon>Outword_FirstWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW\PrintInword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW\PrintInword.Designer.cs">
+      <DependentUpon>PrintInword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW\ViewInwards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW\ViewInwards.Designer.cs">
+      <DependentUpon>ViewInwards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW\ViewOutwards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW\ViewOutwards.Designer.cs">
+      <DependentUpon>ViewOutwards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEW\ViewOutwards_Other.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEW\ViewOutwards_Other.Designer.cs">
+      <DependentUpon>ViewOutwards_Other.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutWardsFirstWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutWardsFirstWeight.Designer.cs">
+      <DependentUpon>OutWardsFirstWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutWardsPrint.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutWardsPrint.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OutWardsSecondWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutWardsSecondWeight.Designer.cs">
+      <DependentUpon>OutWardsSecondWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutwordManaualFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutwordManaualFrm.Designer.cs">
+      <DependentUpon>OutwordManaualFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Outword_FeedFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Outword_FeedFrm.Designer.cs">
+      <DependentUpon>Outword_FeedFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintInvoice.Designer.cs">
+      <DependentUpon>PrintInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="InwardManualyFrm.resx">
+      <DependentUpon>InwardManualyFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inwardsfrm.resx">
+      <DependentUpon>Inwardsfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InwardsPrint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InwardsPrint.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InwardsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InwardsReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InwordsReports.resx">
+      <DependentUpon>InwordsReports.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\SaleReturnSecondWeight.resx">
+      <DependentUpon>SaleReturnSecondWeight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\SaleReturnFirstWeight.resx">
+      <DependentUpon>SaleReturnFirstWeight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\DC.resx">
+      <DependentUpon>DC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\DC_others.resx">
+      <DependentUpon>DC_others.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\InwardsPrint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InwardsPrint.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\Inward_FirstWeight.resx">
+      <DependentUpon>Inward_FirstWeight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\Inward_SecondWeight.resx">
+      <DependentUpon>Inward_SecondWeight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\OutWardsPrint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OutWardsPrint.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\Outward_Others.resx">
+      <DependentUpon>Outward_Others.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\Outward_SecondWeight.resx">
+      <DependentUpon>Outward_SecondWeight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\Outword_FirstWeight.resx">
+      <DependentUpon>Outword_FirstWeight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\PrintInword.resx">
+      <DependentUpon>PrintInword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\ViewInwards.resx">
+      <DependentUpon>ViewInwards.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\ViewOutwards.resx">
+      <DependentUpon>ViewOutwards.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEW\ViewOutwards_Other.resx">
+      <DependentUpon>ViewOutwards_Other.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutWardsFirstWeight.resx">
+      <DependentUpon>OutWardsFirstWeight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutWardsPrint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OutWardsPrint.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutWardsSecondWeight.resx">
+      <DependentUpon>OutWardsSecondWeight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutwordManaualFrm.resx">
+      <DependentUpon>OutwordManaualFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Outword_FeedFrm.resx">
+      <DependentUpon>Outword_FeedFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintInvoice.resx">
+      <DependentUpon>PrintInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InwardsSecondWeight.resx">
+      <DependentUpon>InwardsSecondWeight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportViewer.resx">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testfrm.resx">
+      <DependentUpon>testfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WeightDataDataSet.xsc">
+      <DependentUpon>WeightDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WeightDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WeightDataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WeightDataDataSet.xss">
+      <DependentUpon>WeightDataDataSet.xsd</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="InwardsSecondWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InwardsSecondWeight.Designer.cs">
+      <DependentUpon>InwardsSecondWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportViewer.Designer.cs">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="testfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testfrm.Designer.cs">
+      <DependentUpon>testfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeightDataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WeightDataDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

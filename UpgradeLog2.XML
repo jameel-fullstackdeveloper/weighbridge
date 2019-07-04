@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WeightSoftware">
+</Property><Property Name="Solution File" Value="F:\WeightSoftware\WeightSoftware.sln">
+</Property><Property Name="User Options File" Value="F:\WeightSoftware\WeightSoftware.suo">
+</Property><Property Name="Date" Value="Saturday, 11 May 2019">
+</Property><Property Name="Time" Value="16:30 PM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="WeightSoftware.sln" Description="File successfully backed up as F:\WeightSoftware\Backup1\WeightSoftware.sln">
+</Event><Event ErrorLevel="0" Project="" Source="WeightSoftware.suo" Description="File successfully backed up as F:\WeightSoftware\Backup1\WeightSoftware.suo">
+</Event><Event ErrorLevel="0" Project="" Source="WeightSoftware.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="WeightSoftware.sln" Description="Converted">
+</Event></UpgradeLog>
